@@ -4,7 +4,7 @@ using System.Collections;
 public class ReferenceTest : MonoBehaviour {
 
 	public float moveSpeed = 10;
-	public float jumpSpeed = 8.0f;
+	//public float jumpSpeed = 8.0f;
 	public float turnSpeed = 60;
 	public float gravity = 20.0f;
 	private Vector3 moveDir = Vector3.zero;
@@ -26,9 +26,9 @@ public class ReferenceTest : MonoBehaviour {
 			//float ver = Input.GetAxis ("Vertical") * moveSpeed * Time.deltaTime;
 			//transform.Translate (0, 0, ver);
 
-			if (Input.GetButton ("Jump")) {
-				moveDir.y = jumpSpeed;
-			}
+			//if (Input.GetButton ("Jump")) {
+			//	moveDir.y = jumpSpeed;
+			//}
 		}
 
 		float hor = Input.GetAxis ("Horizontal") * turnSpeed * Time.deltaTime;
