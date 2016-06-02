@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class ReferenceTest : MonoBehaviour {
@@ -9,9 +10,15 @@ public class ReferenceTest : MonoBehaviour {
 	public float gravity = 20.0f;
 	private Vector3 moveDir = Vector3.zero;
 
+	private int gold;
+	private int silver;
+	public Text goldCount;
+	public Text silverCount;
+
 	// Use this for initialization
 	void Start () {
-	
+		gold = 0;
+		silver = 0;
 	}
 	
 	// Update is called once per frame
@@ -36,5 +43,28 @@ public class ReferenceTest : MonoBehaviour {
 
 		moveDir.y -= gravity * Time.deltaTime;
 		controller.Move(moveDir * Time.deltaTime);
+	}
+
+	void OnTriggerEnter(Collider other)
+	{
+		if (other.gameObject.CompareTag ("Doubloon")) {
+			other.gameObject.SetActive (false);
+			gold += 1;
+			UpdateGold ();
+		}
+
+		if (other.gameObject.CompareTag ("Piece")) {
+			other.gameObject.SetActive (false);
+			silver += 1;
+			UpdateSilver ();
+		}
+	}
+
+	void UpdateGold(){
+		goldCount.text = "" + gold;
+	}
+
+	void UpdateSilver(){
+		silverCount.text = "" + silver;
 	}
 }
