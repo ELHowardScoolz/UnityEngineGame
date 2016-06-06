@@ -1,0 +1,692 @@
+fileFormatVersion: 2
+guid: 4a0893fcf4f8fb141bd9a586206e0f85
+timeCreated: 1465170636
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: ArmBoneL
+    100004: Chest Bones
+    100006: Chest Bones.001
+    100008: Chest Bones.002
+    100010: Chest Bones.003
+    100012: Chest Bones.004
+    100014: Chest Bones.004_end
+    100016: Chest Bones.005
+    100018: Chest Bones.006
+    100020: Chest Bones.006_end
+    100022: Chest Bones.008
+    100024: Chest Bones.009
+    100026: Chest Bones.009_end
+    100028: HandBoneL
+    100030: HandBoneL_end
+    100032: Jacket
+    100034: LFootIK
+    100036: LFootIK_end
+    100038: //RootNode
+    100040: Plane
+    100042: RFootIK
+    100044: RFootIK_end
+    100046: Root
+    100048: Root.001
+    100050: Root.002
+    100052: Root.003
+    100054: Root.003_end
+    100056: Root.005
+    100058: Root.006
+    100060: Root.007
+    100062: Root.007_end
+    100064: ShoulderBonesL
+    100066: ThumbBottomL
+    100068: ThumbTopL
+    100070: ThumbTopL_end
+    100072: WristBoneL
+    400000: Armature
+    400002: ArmBoneL
+    400004: Chest Bones
+    400006: Chest Bones.001
+    400008: Chest Bones.002
+    400010: Chest Bones.003
+    400012: Chest Bones.004
+    400014: Chest Bones.004_end
+    400016: Chest Bones.005
+    400018: Chest Bones.006
+    400020: Chest Bones.006_end
+    400022: Chest Bones.008
+    400024: Chest Bones.009
+    400026: Chest Bones.009_end
+    400028: HandBoneL
+    400030: HandBoneL_end
+    400032: Jacket
+    400034: LFootIK
+    400036: LFootIK_end
+    400038: //RootNode
+    400040: Plane
+    400042: RFootIK
+    400044: RFootIK_end
+    400046: Root
+    400048: Root.001
+    400050: Root.002
+    400052: Root.003
+    400054: Root.003_end
+    400056: Root.005
+    400058: Root.006
+    400060: Root.007
+    400062: Root.007_end
+    400064: ShoulderBonesL
+    400066: ThumbBottomL
+    400068: ThumbTopL
+    400070: ThumbTopL_end
+    400072: WristBoneL
+    4300000: Plane
+    4300002: Jacket
+    7400000: Idle
+    7400002: Run
+    7400004: SwordAttack
+    7400006: GunAttack
+    7400008: GunDraw
+    7400010: GunWithdraw
+    7400012: WeaponChange
+    9500000: //RootNode
+    13700000: Jacket
+    13700002: Plane
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Armature|ArmatureAction
+      firstFrame: 132
+      lastFrame: 149
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/LFootIK
+        weight: 1
+      - path: Armature/LFootIK/LFootIK_end
+        weight: 1
+      - path: Armature/RFootIK
+        weight: 1
+      - path: Armature/RFootIK/RFootIK_end
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Chest Bones
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003/Chest
+          Bones.004
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003/Chest
+          Bones.004/Chest Bones.004_end
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003/Chest
+          Bones.005
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003/Chest
+          Bones.005/Chest Bones.006
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003/Chest
+          Bones.005/Chest Bones.006/Chest Bones.006_end
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.008
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.008/Chest Bones.009
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.008/Chest Bones.009/Chest Bones.009_end
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL/HandBoneL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL/HandBoneL/HandBoneL_end
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL/ThumbBottomL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL/ThumbBottomL/ThumbTopL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL/ThumbBottomL/ThumbTopL/ThumbTopL_end
+        weight: 1
+      - path: Armature/Root.001
+        weight: 1
+      - path: Armature/Root.001/Root.002
+        weight: 1
+      - path: Armature/Root.001/Root.002/Root.003
+        weight: 1
+      - path: Armature/Root.001/Root.002/Root.003/Root.003_end
+        weight: 1
+      - path: Armature/Root.005
+        weight: 1
+      - path: Armature/Root.005/Root.006
+        weight: 1
+      - path: Armature/Root.005/Root.006/Root.007
+        weight: 1
+      - path: Armature/Root.005/Root.006/Root.007/Root.007_end
+        weight: 1
+      - path: Jacket
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run
+      takeName: Armature|ArmatureAction
+      firstFrame: 99
+      lastFrame: 112
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/LFootIK
+        weight: 1
+      - path: Armature/LFootIK/LFootIK_end
+        weight: 1
+      - path: Armature/RFootIK
+        weight: 1
+      - path: Armature/RFootIK/RFootIK_end
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Chest Bones
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003/Chest
+          Bones.004
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003/Chest
+          Bones.004/Chest Bones.004_end
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003/Chest
+          Bones.005
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003/Chest
+          Bones.005/Chest Bones.006
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003/Chest
+          Bones.005/Chest Bones.006/Chest Bones.006_end
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.008
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.008/Chest Bones.009
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.008/Chest Bones.009/Chest Bones.009_end
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL/HandBoneL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL/HandBoneL/HandBoneL_end
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL/ThumbBottomL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL/ThumbBottomL/ThumbTopL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL/ThumbBottomL/ThumbTopL/ThumbTopL_end
+        weight: 1
+      - path: Armature/Root.001
+        weight: 1
+      - path: Armature/Root.001/Root.002
+        weight: 1
+      - path: Armature/Root.001/Root.002/Root.003
+        weight: 1
+      - path: Armature/Root.001/Root.002/Root.003/Root.003_end
+        weight: 1
+      - path: Armature/Root.005
+        weight: 1
+      - path: Armature/Root.005/Root.006
+        weight: 1
+      - path: Armature/Root.005/Root.006/Root.007
+        weight: 1
+      - path: Armature/Root.005/Root.006/Root.007/Root.007_end
+        weight: 1
+      - path: Jacket
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SwordAttack
+      takeName: Armature|ArmatureAction
+      firstFrame: 66
+      lastFrame: 85
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/LFootIK
+        weight: 1
+      - path: Armature/LFootIK/LFootIK_end
+        weight: 1
+      - path: Armature/RFootIK
+        weight: 1
+      - path: Armature/RFootIK/RFootIK_end
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Chest Bones
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003/Chest
+          Bones.004
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003/Chest
+          Bones.004/Chest Bones.004_end
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003/Chest
+          Bones.005
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003/Chest
+          Bones.005/Chest Bones.006
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003/Chest
+          Bones.005/Chest Bones.006/Chest Bones.006_end
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.008
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.008/Chest Bones.009
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.008/Chest Bones.009/Chest Bones.009_end
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL/HandBoneL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL/HandBoneL/HandBoneL_end
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL/ThumbBottomL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL/ThumbBottomL/ThumbTopL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL/ThumbBottomL/ThumbTopL/ThumbTopL_end
+        weight: 1
+      - path: Armature/Root.001
+        weight: 1
+      - path: Armature/Root.001/Root.002
+        weight: 1
+      - path: Armature/Root.001/Root.002/Root.003
+        weight: 1
+      - path: Armature/Root.001/Root.002/Root.003/Root.003_end
+        weight: 1
+      - path: Armature/Root.005
+        weight: 1
+      - path: Armature/Root.005/Root.006
+        weight: 1
+      - path: Armature/Root.005/Root.006/Root.007
+        weight: 1
+      - path: Armature/Root.005/Root.006/Root.007/Root.007_end
+        weight: 1
+      - path: Jacket
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: GunAttack
+      takeName: Armature|ArmatureAction
+      firstFrame: 3
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/LFootIK
+        weight: 1
+      - path: Armature/LFootIK/LFootIK_end
+        weight: 1
+      - path: Armature/RFootIK
+        weight: 1
+      - path: Armature/RFootIK/RFootIK_end
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Chest Bones
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003/Chest
+          Bones.004
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003/Chest
+          Bones.004/Chest Bones.004_end
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003/Chest
+          Bones.005
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003/Chest
+          Bones.005/Chest Bones.006
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003/Chest
+          Bones.005/Chest Bones.006/Chest Bones.006_end
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.008
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.008/Chest Bones.009
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.008/Chest Bones.009/Chest Bones.009_end
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL/HandBoneL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL/HandBoneL/HandBoneL_end
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL/ThumbBottomL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL/ThumbBottomL/ThumbTopL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL/ThumbBottomL/ThumbTopL/ThumbTopL_end
+        weight: 1
+      - path: Armature/Root.001
+        weight: 1
+      - path: Armature/Root.001/Root.002
+        weight: 1
+      - path: Armature/Root.001/Root.002/Root.003
+        weight: 1
+      - path: Armature/Root.001/Root.002/Root.003/Root.003_end
+        weight: 1
+      - path: Armature/Root.005
+        weight: 1
+      - path: Armature/Root.005/Root.006
+        weight: 1
+      - path: Armature/Root.005/Root.006/Root.007
+        weight: 1
+      - path: Armature/Root.005/Root.006/Root.007/Root.007_end
+        weight: 1
+      - path: Jacket
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: WeaponChange
+      takeName: Armature|ArmatureAction
+      firstFrame: 36
+      lastFrame: 55
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/LFootIK
+        weight: 1
+      - path: Armature/LFootIK/LFootIK_end
+        weight: 1
+      - path: Armature/RFootIK
+        weight: 1
+      - path: Armature/RFootIK/RFootIK_end
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Chest Bones
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003/Chest
+          Bones.004
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003/Chest
+          Bones.004/Chest Bones.004_end
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003/Chest
+          Bones.005
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003/Chest
+          Bones.005/Chest Bones.006
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.001/Chest Bones.002/Chest Bones.003/Chest
+          Bones.005/Chest Bones.006/Chest Bones.006_end
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.008
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.008/Chest Bones.009
+        weight: 1
+      - path: Armature/Root/Chest Bones/Chest Bones.008/Chest Bones.009/Chest Bones.009_end
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL/HandBoneL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL/HandBoneL/HandBoneL_end
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL/ThumbBottomL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL/ThumbBottomL/ThumbTopL
+        weight: 1
+      - path: Armature/Root/Chest Bones/ShoulderBonesL/ArmBoneL/WristBoneL/ThumbBottomL/ThumbTopL/ThumbTopL_end
+        weight: 1
+      - path: Armature/Root.001
+        weight: 1
+      - path: Armature/Root.001/Root.002
+        weight: 1
+      - path: Armature/Root.001/Root.002/Root.003
+        weight: 1
+      - path: Armature/Root.001/Root.002/Root.003/Root.003_end
+        weight: 1
+      - path: Armature/Root.005
+        weight: 1
+      - path: Armature/Root.005/Root.006
+        weight: 1
+      - path: Armature/Root.005/Root.006/Root.007
+        weight: 1
+      - path: Armature/Root.005/Root.006/Root.007/Root.007_end
+        weight: 1
+      - path: Jacket
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -15,9 +15,12 @@ public class ReferenceTest : MonoBehaviour {
 	public Text goldCount;
 	public Text silverCount;
 
+    private Animator anim;
+
 	// Use this for initialization
 	void Start () {
-		gold = 0;
+        anim = gameObject.GetComponent<Animator>();
+        gold = 0;
 		silver = 0;
 	}
 	
@@ -29,16 +32,34 @@ public class ReferenceTest : MonoBehaviour {
 			moveDir = new Vector3(Input.GetAxis ("Horizontal"), 0, Input.GetAxis ("Vertical"));
 			moveDir = transform.TransformDirection (moveDir);
 			moveDir *= moveSpeed;
+            //float ver = Input.GetAxis ("Vertical") * moveSpeed * Time.deltaTime;
+            //transform.Translate (0, 0, ver);
 
-			//float ver = Input.GetAxis ("Vertical") * moveSpeed * Time.deltaTime;
-			//transform.Translate (0, 0, ver);
+            //if (Input.GetButton ("Jump")) {
+            //	moveDir.y = jumpSpeed;
+            //}
+        }
 
-			//if (Input.GetButton ("Jump")) {
-			//	moveDir.y = jumpSpeed;
-			//}
-		}
+        if (Input.GetKey("up") || Input.GetKey("right") || Input.GetKey("left") || Input.GetKey("down") || Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("d") || Input.GetKey("s"))
+        {
+            anim.SetTrigger("Move");
+        }
+        else
+        {
+            anim.SetTrigger("stop");
+        }
 
-		float hor = Input.GetAxis ("Horizontal") * turnSpeed * Time.deltaTime;
+        if(Input.GetKey("mouse 1"))
+        {
+            anim.SetTrigger("Change");
+        }
+
+        if (Input.GetKey("mouse 0"))
+        {
+            anim.SetTrigger("attack");
+        }
+
+        float hor = Input.GetAxis ("Horizontal") * turnSpeed * Time.deltaTime;
 		transform.Rotate (0, hor, 0);
 
 		moveDir.y -= gravity * Time.deltaTime;
