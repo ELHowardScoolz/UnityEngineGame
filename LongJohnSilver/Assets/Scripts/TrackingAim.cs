@@ -7,7 +7,13 @@ public class TrackingAim : MonoBehaviour {
 	public GameObject target = null;
 
 	Vector3 lastPosistion = Vector3.zero;
+	Vector3 direction = Vector3.zero;
 	Quaternion lookAt;
+
+	bool fired = false;
+	//GameObject launcher;
+	int damage = 5;
+	int health = 5;
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +30,10 @@ public class TrackingAim : MonoBehaviour {
 
 			if (transform.rotation != lookAt) {
 				transform.rotation = Quaternion.RotateTowards (transform.rotation, lookAt, speed * Time.deltaTime); 
+			}
+
+			if (fired) {
+				transform.position += direction * (speed * Time.deltaTime);
 			}
 		}
 	}

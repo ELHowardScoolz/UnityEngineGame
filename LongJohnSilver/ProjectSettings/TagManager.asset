@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Doubloon
   - Piece
+  - Sword
+  - Gun
   layers:
   - Default
   - TransparentFX

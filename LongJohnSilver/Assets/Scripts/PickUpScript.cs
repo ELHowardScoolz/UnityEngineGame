@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PickUpScript : MonoBehaviour {
 
+
 	// Use this for initialization
 	void Start () {
 	
@@ -10,6 +11,6 @@ public class PickUpScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 	}
-		
 }

@@ -10,18 +10,30 @@ public class ReferenceTest : MonoBehaviour {
 	public float gravity = 20.0f;
 	private Vector3 moveDir = Vector3.zero;
 
-	private int gold;
-	private int silver;
+	public GameObject Psword, EngD;
+
+	public Slider healthBar;
+
+	private int gold,silver;
+	private int ammo;
+	private int health;
 	public Text goldCount;
 	public Text silverCount;
+	public Text ammoCount;
+	bool sword = true;
+	bool gun = false;
+	bool running = false;
 
     private Animator anim;
 
 	// Use this for initialization
 	void Start () {
         anim = gameObject.GetComponent<Animator>();
+		health = 100;
+		ammo = 6;
         gold = 0;
 		silver = 0;
+		healthBar.value = 50;
 	}
 	
 	// Update is called once per frame
@@ -40,23 +52,55 @@ public class ReferenceTest : MonoBehaviour {
             //}
         }
 
-        if (Input.GetKey("up") || Input.GetKey("right") || Input.GetKey("left") || Input.GetKey("down") || Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("d") || Input.GetKey("s"))
+		if (Input.GetKey("up") || Input.GetKey("right") || Input.GetKey("left") || Input.GetKey("down") || Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("d") || Input.GetKey("s"))
         {
             anim.SetTrigger("Move");
+			running = true;
         }
         else
         {
             anim.SetTrigger("stop");
+			running = false;
         }
 
-        if(Input.GetKey("mouse 1"))
+        if(Input.GetKeyDown("mouse 1"))
         {
             anim.SetTrigger("Change");
+			if(sword == true) 
+			{
+				sword = false;
+				//GameObject.FindWithTag("Sword").SetActive(false);
+				Psword.gameObject.SetActive (false);
+				gun = true;
+				//GameObject.FindWithTag("Gun").SetActive(true);
+				EngD.gameObject.SetActive (true);
+			} 
+			else if(gun == true) 
+			{
+				gun = false;
+				//GameObject.FindWithTag("Gun").SetActive(false);
+				EngD.gameObject.SetActive (false);
+				sword = true;
+				//GameObject.FindWithTag("Sword").SetActive(true);
+				Psword.gameObject.SetActive (true);
+			}
         }
 
-        if (Input.GetKey("mouse 0"))
+		if (Input.GetKeyDown("mouse 0"))
         {
-            anim.SetTrigger("attack");
+			if (running == false) 
+			{
+				if (sword == true) 
+				{
+					anim.SetTrigger ("attack");
+				} 
+				else if (gun == true && ammo != 0) 
+				{
+					anim.SetTrigger ("Shoot");
+					ammo -= 1;
+					UpdateAmmo ();
+				}
+			}
         }
 
         float hor = Input.GetAxis ("Horizontal") * turnSpeed * Time.deltaTime;
@@ -87,5 +131,9 @@ public class ReferenceTest : MonoBehaviour {
 
 	void UpdateSilver(){
 		silverCount.text = "" + silver;
+	}
+
+	void UpdateAmmo(){
+		ammoCount.text = "" + ammo;
 	}
 }
