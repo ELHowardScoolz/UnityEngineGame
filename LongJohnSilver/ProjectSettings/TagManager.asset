@@ -8,6 +8,8 @@ TagManager:
   - Piece
   - Sword
   - Gun
+  - Bullet
+  - CanonShot
   layers:
   - Default
   - TransparentFX

@@ -24,6 +24,10 @@ public class ReferenceTest : MonoBehaviour {
 	bool gun = false;
 	bool running = false;
 
+	public Transform shooter;
+	public Rigidbody bullet;
+	float bulSpeed = 40.0f;
+
     private Animator anim;
 
 	// Use this for initialization
@@ -33,7 +37,7 @@ public class ReferenceTest : MonoBehaviour {
 		ammo = 6;
         gold = 0;
 		silver = 0;
-		healthBar.value = 50;
+		//healthBar.value = 50;
 	}
 	
 	// Update is called once per frame
@@ -99,6 +103,9 @@ public class ReferenceTest : MonoBehaviour {
 					anim.SetTrigger ("Shoot");
 					ammo -= 1;
 					UpdateAmmo ();
+					Rigidbody instantiatedProjectile = Instantiate(bullet, shooter.position, shooter.rotation) as Rigidbody;
+					instantiatedProjectile.velocity = transform.TransformDirection(new Vector3(0, 0, bulSpeed));
+
 				}
 			}
         }
@@ -122,6 +129,12 @@ public class ReferenceTest : MonoBehaviour {
 			other.gameObject.SetActive (false);
 			silver += 1;
 			UpdateSilver ();
+		}
+
+
+		if (other.gameObject.CompareTag ("CanonShot")) {
+			Destroy (other.gameObject);
+			healthBar.value -= 10;
 		}
 	}
 
